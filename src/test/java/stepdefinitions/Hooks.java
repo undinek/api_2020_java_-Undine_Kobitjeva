@@ -3,7 +3,6 @@ package stepdefinitions;
 import clients.ClickupClient;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import helpers.ClickupSpaceHelper;
 import helpers.TestCaseContext;
 
 public class Hooks {

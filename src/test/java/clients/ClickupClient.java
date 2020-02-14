@@ -3,10 +3,7 @@ package clients;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 
-import javax.swing.text.html.parser.Entity;
 import javax.ws.rs.core.Response;
-
-import java.util.Random;
 
 import static io.restassured.RestAssured.given;
 

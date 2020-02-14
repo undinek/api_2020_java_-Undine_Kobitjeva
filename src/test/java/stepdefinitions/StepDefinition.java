@@ -9,14 +9,10 @@ import domain.ClickupList;
 import domain.ClickupSpace;
 import domain.ClickupTask;
 import helpers.*;
-import io.restassured.response.ValidatableResponse;
-import org.assertj.core.api.AbstractBooleanAssert;
 
-import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
-import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepDefinition {
