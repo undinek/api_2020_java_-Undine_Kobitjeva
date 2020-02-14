@@ -16,7 +16,7 @@ Feature: Folders
   @NewFolder
   @SpaceNameChanged
   Scenario: Update space name
-    When User updates space with id "2572551" name to "Updated space name"
+    When User updates space with id "2572551" name to "New space name"
     And User creates new folder with name "My new folder name"
     And Verify that folder is created
     And Create list in folder with name "My list name"

@@ -20,7 +20,7 @@ public class Hooks {
     }
 
     @After("@SpaceNameChanged")
-    public void afterBoardNameHasBeenChaged(){
-        clickupClient.updateSpaceName(TestCaseContext.get().getClickupSpace().getId(), "Default space name");
+    public void afterSpaceNameHasBeenChanged(){
+        clickupClient.updateSpaceName(TestCaseContext.get().getClickupSpace().getId(), "Usual space name");
     }
 }

@@ -68,7 +68,8 @@ public class StepDefinition {
 
     @When("User updates space with id {string} name to {string}")
     public void userUpdatesSpaceWithIdNameTo(String spaceId, String spaceName) {
-        ClickupSpace fetchedClickupSpace = ClickupSpaceHelper.updateClickupSpace(spaceId, spaceName);
+        ClickupSpaceHelper.updateClickupSpace(spaceId, spaceName);
+        ClickupSpace fetchedClickupSpace = ClickupSpaceHelper.getClickupSpace(spaceId);
         TestCaseContext.get().setClickupSpace(fetchedClickupSpace);
     }
 

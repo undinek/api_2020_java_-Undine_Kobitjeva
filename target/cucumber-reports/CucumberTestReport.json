@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3856846,
+              "duration": 2362671,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2099761706,
+              "duration": 2132877217,
               "status": "passed"
             },
             "line": 4,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 335329949,
+              "duration": 332190368,
               "status": "passed"
             },
             "line": 5,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 690088436,
+              "duration": 314644626,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
         "before": [
           {
             "result": {
-              "duration": 363476,
+              "duration": 278149,
               "status": "passed"
             },
             "match": {
@@ -84,7 +84,7 @@
         "after": [
           {
             "result": {
-              "duration": 304538114,
+              "duration": 325200761,
               "status": "passed"
             },
             "match": {
@@ -97,7 +97,7 @@
         "steps": [
           {
             "result": {
-              "duration": 617055514,
+              "duration": 995441357,
               "status": "passed"
             },
             "line": 10,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 292297600,
+              "duration": 333684844,
               "status": "passed"
             },
             "line": 11,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 326698067,
+              "duration": 304404176,
               "status": "passed"
             },
             "line": 12,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 304617631,
+              "duration": 302930142,
               "status": "passed"
             },
             "line": 13,
@@ -170,7 +170,7 @@
         "before": [
           {
             "result": {
-              "duration": 330320,
+              "duration": 243297,
               "status": "passed"
             },
             "match": {
@@ -185,7 +185,7 @@
         "after": [
           {
             "result": {
-              "duration": 601815253,
+              "duration": 320708607,
               "status": "passed"
             },
             "match": {
@@ -194,11 +194,11 @@
           },
           {
             "result": {
-              "duration": 297175462,
+              "duration": 624451607,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.afterBoardNameHasBeenChaged()"
+              "location": "Hooks.afterSpaceNameHasBeenChanged()"
             }
           }
         ],
@@ -207,11 +207,11 @@
         "steps": [
           {
             "result": {
-              "duration": 329071748,
+              "duration": 594235312,
               "status": "passed"
             },
             "line": 19,
-            "name": "User updates space with id \"2572551\" name to \"Updated space name\"",
+            "name": "User updates space with id \"2572551\" name to \"New space name\"",
             "match": {
               "arguments": [
                 {
@@ -219,7 +219,7 @@
                   "offset": 27
                 },
                 {
-                  "val": "\"Updated space name\"",
+                  "val": "\"New space name\"",
                   "offset": 45
                 }
               ],
@@ -229,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 310794087,
+              "duration": 287472388,
               "status": "passed"
             },
             "line": 20,
@@ -247,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 307672038,
+              "duration": 297635314,
               "status": "passed"
             },
             "line": 21,
@@ -259,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 334307377,
+              "duration": 302620020,
               "status": "passed"
             },
             "line": 22,
@@ -277,7 +277,7 @@
           },
           {
             "result": {
-              "duration": 323024466,
+              "duration": 295614021,
               "status": "passed"
             },
             "line": 23,
@@ -289,7 +289,7 @@
           },
           {
             "result": {
-              "duration": 307954420,
+              "duration": 278126235,
               "status": "passed"
             },
             "line": 24,
@@ -313,7 +313,7 @@
         "before": [
           {
             "result": {
-              "duration": 74639,
+              "duration": 53017,
               "status": "passed"
             },
             "match": {
@@ -328,7 +328,7 @@
         "after": [
           {
             "result": {
-              "duration": 595003962,
+              "duration": 304117974,
               "status": "passed"
             },
             "match": {
@@ -341,7 +341,7 @@
         "steps": [
           {
             "result": {
-              "duration": 591510874,
+              "duration": 618789584,
               "status": "passed"
             },
             "line": 28,
@@ -363,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 291486057,
+              "duration": 305614987,
               "status": "passed"
             },
             "line": 29,
@@ -375,7 +375,7 @@
           },
           {
             "result": {
-              "duration": 338488007,
+              "duration": 320469785,
               "status": "passed"
             },
             "line": 30,
@@ -393,7 +393,7 @@
           },
           {
             "result": {
-              "duration": 1720778049,
+              "duration": 1696388844,
               "status": "passed"
             },
             "line": 31,
@@ -411,8 +411,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[5]\u003e but was:\u003c[0]\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:108)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/folder.feature:32)\n",
-              "duration": 616530535,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[5]\u003e but was:\u003c[0]\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:109)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/folder.feature:32)\n",
+              "duration": 657206625,
               "status": "failed"
             },
             "line": 32,

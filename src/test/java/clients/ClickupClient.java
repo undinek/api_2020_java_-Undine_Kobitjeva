@@ -92,8 +92,8 @@ public class ClickupClient {
     public ValidatableResponse updateSpaceName(String spaceId, String spaceName){
         //https://api.clickup.com/api/v2/space/2572551
         return given().
+                body("{\"name\": \""+ spaceName +"\"}").
                 header("Authorization", API_TOKEN).
-                body("{\"name\": \""+ spaceName + "\"}").
                 when().
                 put(String.format(CLICKUP_GET_SPACE_URL, CLICKUP_BASE_URL, spaceId)).
                 then().

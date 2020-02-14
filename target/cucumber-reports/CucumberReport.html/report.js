@@ -115,7 +115,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User updates space with id \"2572551\" name to \"Updated space name\"",
+  "name": "User updates space with id \"2572551\" name to \"New space name\"",
   "keyword": "When "
 });
 formatter.match({
@@ -241,7 +241,7 @@ formatter.match({
   "location": "StepDefinition.verifyThatAllNecessaryTasksAreCreated()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[5]\u003e but was:\u003c[0]\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:108)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/folder.feature:32)\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[5]\u003e but was:\u003c[0]\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:109)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/folder.feature:32)\n",
   "status": "failed"
 });
 formatter.after({
