@@ -1,0 +1,14 @@
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/ClickupListHelper.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/stepdefinitions/Hooks.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/RandomString.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/clients/ClickupClient.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/ClickupTaskHelper.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/domain/ClickupList.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/domain/ClickupFolder.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/ClickupFolderHelper.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/TestCaseContext.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/domain/ClickupTask.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/helpers/ClickupSpaceHelper.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/testrunner/TestRunner.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/domain/ClickupSpace.java
+/Users/siatdl/Automation/api_2020_java_Undine_Kobitjeva/src/test/java/stepdefinitions/StepDefinition.java

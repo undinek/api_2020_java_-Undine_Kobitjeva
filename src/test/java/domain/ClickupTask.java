@@ -3,7 +3,7 @@ package domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ClickupFolder {
+public class ClickupTask {
     private String id;
     private String name;
 
