@@ -17,6 +17,6 @@ public class ClickupTaskHelper {
 
     public static List<ClickupTask> getClickupTasks(String listId)
     {
-        return CLICKUP_CLIENT.getAllTasks(listId).extract().body().jsonPath().getList("$", ClickupTask.class);
+        return CLICKUP_CLIENT.getAllTasks(listId).extract().body().jsonPath().getList("$.id", ClickupTask.class);
     }
 }

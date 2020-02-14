@@ -6,7 +6,314 @@
         "before": [
           {
             "result": {
-              "duration": 3995534,
+              "duration": 3856846,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Add folder",
+        "description": "",
+        "id": "folders;add-folder",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2099761706,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User creates new folder in space with id \"2572551\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2572551\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.userCreatesNewFolder(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 335329949,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify that folder is created",
+            "match": {
+              "location": "StepDefinition.verifyThatFolderIsCreated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 690088436,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Delete folder",
+            "match": {
+              "location": "StepDefinition.deleteFolder()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 363476,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Add folder and list",
+        "description": "",
+        "id": "folders;add-folder-and-list",
+        "after": [
+          {
+            "result": {
+              "duration": 304538114,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.deleteFolder()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 617055514,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User creates new folder in space with id \"2572551\" and name \"New folder name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2572551\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"New folder name\"",
+                  "offset": 60
+                }
+              ],
+              "location": "StepDefinition.userCreatesNewFolderInSpaceWithIdAndName(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 292297600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify that folder is created",
+            "match": {
+              "location": "StepDefinition.verifyThatFolderIsCreated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 326698067,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Create list in folder with name \"New list name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New list name\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.createListInFolderWithName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 304617631,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify that list is created",
+            "match": {
+              "location": "StepDefinition.verifyThatListIsCreated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewFolder"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 330320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Update space name",
+        "description": "",
+        "id": "folders;update-space-name",
+        "after": [
+          {
+            "result": {
+              "duration": 601815253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.deleteFolder()"
+            }
+          },
+          {
+            "result": {
+              "duration": 297175462,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterBoardNameHasBeenChaged()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 329071748,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User updates space with id \"2572551\" name to \"Updated space name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2572551\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Updated space name\"",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefinition.userUpdatesSpaceWithIdNameTo(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 310794087,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User creates new folder with name \"My new folder name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My new folder name\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinition.userCreatesNewFolderWithName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 307672038,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify that folder is created",
+            "match": {
+              "location": "StepDefinition.verifyThatFolderIsCreated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 334307377,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Create list in folder with name \"My list name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My list name\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.createListInFolderWithName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323024466,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Verify that list is created",
+            "match": {
+              "location": "StepDefinition.verifyThatListIsCreated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 307954420,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify Space Id and Name",
+            "match": {
+              "location": "StepDefinition.verifySpaceIdAndName()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewFolder"
+          },
+          {
+            "name": "@SpaceNameChanged"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 74639,
               "status": "passed"
             },
             "match": {
@@ -21,7 +328,7 @@
         "after": [
           {
             "result": {
-              "duration": 331251543,
+              "duration": 595003962,
               "status": "passed"
             },
             "match": {
@@ -34,7 +341,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2212504426,
+              "duration": 591510874,
               "status": "passed"
             },
             "line": 28,
@@ -56,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 339537077,
+              "duration": 291486057,
               "status": "passed"
             },
             "line": 29,
@@ -68,7 +375,7 @@
           },
           {
             "result": {
-              "duration": 323965115,
+              "duration": 338488007,
               "status": "passed"
             },
             "line": 30,
@@ -86,7 +393,7 @@
           },
           {
             "result": {
-              "duration": 1799963569,
+              "duration": 1720778049,
               "status": "passed"
             },
             "line": 31,
@@ -104,8 +411,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.ClassCastException: java.util.HashMap cannot be cast to java.util.List\n\tat io.restassured.path.json.JsonPath.getList(JsonPath.java:390)\n\tat helpers.ClickupTaskHelper.getClickupTasks(ClickupTaskHelper.java:22)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:103)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/addFolder.feature:32)\n",
-              "duration": 825349437,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[5]\u003e but was:\u003c[0]\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat stepdefinitions.StepDefinition.verifyThatAllNecessaryTasksAreCreated(StepDefinition.java:108)\n\tat ✽.Verify that all necessary tasks are created(src/test/resources/features/folder.feature:32)\n",
+              "duration": 616530535,
               "status": "failed"
             },
             "line": 32,
@@ -127,7 +434,7 @@
     "description": "",
     "id": "folders",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/addFolder.feature",
+    "uri": "src/test/resources/features/folder.feature",
     "tags": []
   }
 ]

@@ -65,8 +65,8 @@ public class ClickupClient {
     public ValidatableResponse createList(String folderId, String listName){
         //https://api.clickup.com/api/v2/folder/456/list
         return given().
-                body("{\"name\": \"" + listName + "\"}").
                 header("Authorization", API_TOKEN).
+                body("{\"name\": \"" + listName + "\"}").
                 contentType(ContentType.JSON).
                 when().
                 post(String.format(CLICKUP_CREATE_LIST_URL, CLICKUP_BASE_URL, folderId)).
@@ -92,8 +92,8 @@ public class ClickupClient {
     public ValidatableResponse updateSpaceName(String spaceId, String spaceName){
         //https://api.clickup.com/api/v2/space/2572551
         return given().
-                param("name",  spaceName).
                 header("Authorization", API_TOKEN).
+                body("{\"name\": \""+ spaceName + "\"}").
                 when().
                 put(String.format(CLICKUP_GET_SPACE_URL, CLICKUP_BASE_URL, spaceId)).
                 then().
@@ -117,8 +117,8 @@ public class ClickupClient {
     public ValidatableResponse createTask(String listId, String taskName){
         //https://api.clickup.com/api/v2/list/123/task
         return given().
-                body("{\"name\": \"" + taskName + "\"}").
                 header("Authorization", API_TOKEN).
+                body("{\"name\": \"" + taskName + "\"}").
                 contentType(ContentType.JSON).
                 when().
                 post(String.format(CLICKUP_CREATE_TASK_URL, CLICKUP_BASE_URL, listId)).

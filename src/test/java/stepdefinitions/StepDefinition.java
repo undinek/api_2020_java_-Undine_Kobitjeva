@@ -10,6 +10,7 @@ import domain.ClickupSpace;
 import domain.ClickupTask;
 import helpers.*;
 import io.restassured.response.ValidatableResponse;
+import org.assertj.core.api.AbstractBooleanAssert;
 
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
@@ -101,19 +102,10 @@ public class StepDefinition {
     @Then("Verify that all necessary tasks are created")
     public void verifyThatAllNecessaryTasksAreCreated() {
         List<ClickupTask>  fetchedClickupTasks = ClickupTaskHelper.getClickupTasks(TestCaseContext.get().getClickupList().getId());
-        assertThat(fetchedClickupTasks.size() == TestCaseContext.get().getTasks().size());
+
+        Integer i1 = fetchedClickupTasks.size();
+        Integer i2 = TestCaseContext.get().getTasks().size();
+        assertThat(i1).isEqualTo(i2);
     }
 
-    @When("get space id {string}")
-    public void getSpaceId(String spaceId) {
-        //https://api.clickup.com/api/v2/space/790
-             given().
-                    header("Authorization", "pk_4532458_OAKS37LL4L7S9FJKAJJ8JQ3FGHFGTZ4F").
-                    when().
-                    get(String.format("https://api.clickup.com/api/v2/space/" + spaceId)).
-                    then().
-                    log().
-                    ifValidationFails().
-                    statusCode(Response.Status.OK.getStatusCode());
-        }
     }

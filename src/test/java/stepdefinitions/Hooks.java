@@ -3,6 +3,7 @@ package stepdefinitions;
 import clients.ClickupClient;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import helpers.ClickupSpaceHelper;
 import helpers.TestCaseContext;
 
 public class Hooks {
@@ -19,7 +20,7 @@ public class Hooks {
     }
 
     @After("@SpaceNameChanged")
-    public void afterBoardNamehasBeenChaged(){
+    public void afterBoardNameHasBeenChaged(){
         clickupClient.updateSpaceName(TestCaseContext.get().getClickupSpace().getId(), "Default space name");
     }
 }
